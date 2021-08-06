@@ -7,7 +7,7 @@
         background-color: #FFFFFF;
       }
       h1 {
-        color: white;
+        color: black;
         text-align: center;
       }
       p {
@@ -22,9 +22,12 @@
         color: #FFFFFF;
       }
     .page-mainbody {
-      background-color: #FB9300;
+
       background-size: 50%;
-      min-height: 500px;
+      min-height: 800px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: -800px;
       }
 
       .page-footer {
@@ -42,13 +45,54 @@
       ul a:hover{
         text-decoration: underline;
       }
+      .page-rightsidebar{
+      width: 60px;
+      min-height: 800px;
+      float: right;
+      background-color: #001F5F;
+    }
+      .page-leftsidebar{
+      width: 60px;
+      min-height: 800px;
+      background-color: #001F5F;
+      }
+      textarea {
+        width: 700px;
+        padding: 15px;
+        border-radius: 15px;
+        border: 2px solid #FB9300;
+      }
+      input {
+        width: 700px;
+        padding: 15px;
+        border-radius: 15px;
+        border: 2px solid #FB9300;
 
-
+      }
+        input[type=send-message]{
+          background-color: #FB9300;
+        }
+        button {
+          border-radius: 360px;
+          width: 40px;
+          height: 40px;
+          background-color: #FB9300;
+          color: #FFFFFF;
+          text-align: center;
+          position: absolute;
+        }
+        ul {
+          text-align: center;
+        }
+        label, input,textarea {
+          margin-left: 250px;
+        }
     </style>
     <title>CONTACT</title>
   </head>
   <body>
     <div class="page-header">
+      <button type="button" name="button">YLQ</button>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -61,8 +105,26 @@
     </div>
     <div class="page-mainbody">
       <h1>CONTACT</h1>
-      <p> This is a placeholder for my MAIN BODY CONTENT</p>
+      <div class="cform"> <form class="cform" action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" value=""><br><br>
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject" value=""><br><br>
+  <label for="message">Message:</label><br>
+  <textarea type="text" id="message" name="message" value=""></textarea><br><br>
+  <input type="send-message" value="Submit">
+</form></div>
     </div>
+    <aside class="page-rightsidebar">
+
+    </aside>
+    <aside class="page-leftsidebar">
+
+    </aside>
     <div class="page-footer">
       <p> This is a placeholder for my FOOTER</p>
     </div>

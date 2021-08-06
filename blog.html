@@ -7,7 +7,7 @@
         background-color: #FFFFFF;
       }
       h1 {
-        color: white;
+        color: black;
         text-align: center;
       }
       p {
@@ -22,9 +22,12 @@
         color: #FFFFFF;
       }
     .page-mainbody {
-      background-color: #FB9300;
       background-size: 50%;
-      min-height: 500px;
+      min-height: 800px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: -800px;
+
       }
 
       .page-footer {
@@ -42,13 +45,35 @@
       ul a:hover{
         text-decoration: underline;
       }
-
-
+      .page-rightsidebar{
+      width: 60px;
+      min-height: 800px;
+      float: right;
+      background-color: #001F5F;
+    }
+      .page-leftsidebar{
+      width: 60px;
+      min-height: 800px;
+      background-color: #001F5F;
+      }
+      button {
+        border-radius: 360px;
+        width: 40px;
+        height: 40px;
+        background-color: #FB9300;
+        color: #FFFFFF;
+        text-align: center;
+        position: absolute;
+      }
+      ul {
+        text-align: center;
+      }
     </style>
     <title>BLOG</title>
   </head>
   <body>
     <div class="page-header">
+      <button type="button" name="button">YLQ</button>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -59,10 +84,18 @@
         <li><a href="schedule-an-appointment.html">SCHEDULE AN APPOINTMENT</a></li>
       </ul>
     </div>
+
     <div class="page-mainbody">
+
       <h1>BLOG</h1>
       <p> Most of my post are teachnology related such as emerging technology, platform marketing, Sierra Leone and personal achievement.<a href="subscribe.html">Sign up to have new posts emailed to you.</a></p>
     </div>
+    <aside class="page-rightsidebar">
+
+    </aside>
+    <aside class="page-leftsidebar">
+
+    </aside>
     <div class="page-footer">
       <p> This is a placeholder for my FOOTER</p>
     </div>
