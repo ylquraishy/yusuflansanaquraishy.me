@@ -65,3 +65,9 @@
   ul {
     text-align: center;
   }
+  .icon {
+
+    height: 30px;
+    width: 30px;
+    display: inline;
+  }
