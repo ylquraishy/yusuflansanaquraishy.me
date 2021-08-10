@@ -28,6 +28,7 @@
       margin-left: 60px;
       margin-right: 60px;
       margin-bottom: -800px;
+      padding-top: 0.5px;
       }
 
       .page-footer {
@@ -86,7 +87,9 @@
           text-align: center;
         }
         label, input,textarea {
-          margin-left: 250px;
+          margin-left: px;
+          width: 80%;
+          align: center
         }
         .icon {
 
@@ -94,10 +97,14 @@
           width: 30px;
           display: inline;
         }
+        .container{
+          width: 100%;
+        }
     </style>
     <title>SUBSCRIBE</title>
   </head>
   <body>
+       <div class="container">
     <div class="page-header">
       <button type="button" name="button">YLQ</button>
       <ul>
@@ -110,8 +117,10 @@
         <li><a href="https://accounts.google.com/signin/v2/identifier?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&scc=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">SCHEDULE AN APPOINTMENT</a></li>
       </ul>
     </div>
-    <div class="page-mainbody">
+
+      <div class="page-mainbody">
       <h1>SUBSCRIBE</h1>
+
       <p> <form action="/action_page.php">
   <label for="email">Email Address:</label><br>
   <input type="email" id="email" name="email" value=""><br><br>
@@ -133,5 +142,6 @@
     <div class="page-footer">
       <p>  <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul></p>
     </div>
+     </div>
     </body>
 </html>
