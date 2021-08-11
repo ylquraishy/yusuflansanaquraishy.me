@@ -1,63 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <style media="screen">
-      body {
+      .container .page-header {
+        background-color: #001F5F;
+        height: 162px;
+      }
+      .container .page-leftsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
+      }
+      .container .page-rightsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
+        float: right;
+      }
+      .container .page-mainbody {
         background-color: #FFFFFF;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 2000px;
+        margin-top: -2021px;
+        padding-top: 0px;
       }
-      h1 {
-        color: black;
-        text-align: center;
+      .container .page-footer {
+        background-color: #001F5F;
+        height: 60px;
+        padding-top: 1px;
       }
-      p {
-        font-family: verdana;
-        font-size: 20px;
-      }
-      .page-header {
-      min-height: 50px;
-      background-color: #001F5F;
-      }
-      .page-header li a{
+      .container .page-header ul li a {
         color: #FFFFFF;
-
+        text-decoration: none;
       }
-    .page-mainbody {
-      background-size: 50%;
-      min-height: 800px;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-bottom: -800px;
-      padding-top: 0.5px;
-      }
-
-      .page-footer {
-      min-height: 40px;
-      background-color: #001F5F;
-      }
-      li {
+      .page-header li {
         display: inline;
         padding-right: 15px;
-
+        }
+      .page-header ul {
+        text-align: center;
       }
-      ul a {
-       text-decoration: none;
-      }
-      ul a:hover{
+      .page-header ul:hover {
         text-decoration: underline;
       }
-      .page-rightsidebar{
-      width: 60px;
-      min-height: 800px;
-      float: right;
-      background-color: #001F5F;
-    }
-      .page-leftsidebar{
-      width: 60px;
-      min-height: 800px;
-      background-color: #001F5F;
+       .page-header button {
+        border-radius: 360px;
+        width: 150px;
+        height: 150px;
+        background-color:#FB9300;
+        color: #FFFFFF;
+        text-align: center;
+        position: absolute;
       }
-      textarea {
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      .container .page-mainbody ul li {
+       list-style: none;
+       float: left;
+      }
+     .icon {
+       height: 30px;
+       width: 30px;
+       display: inline;
+     }
+     .container .page-footer ul li {
+      list-style: none;
+      float: left;
+     }
+     h1 {
+         color: black;
+         text-align: center;
+       }
+       textarea {
         width: 700px;
         padding: 15px;
         border-radius: 15px;
@@ -68,80 +87,62 @@
         padding: 15px;
         border-radius: 15px;
         border: 2px solid #FB9300;
-      }
-        input[type=submit]{
-          background-color: #FB9300;
-          color: #FFFFFF;
-          text-align: center;
-        }
-        button {
-          border-radius: 360px;
-          width: 40px;
-          height: 40px;
-          background-color: #FB9300;
-          color: #FFFFFF;
-          text-align: center;
-          position: absolute;
-        }
-        ul {
-          text-align: center;
-        }
-        label, input,textarea {
-          margin-left: px;
-          width: 80%;
-          align: center
-        }
-        .icon {
-
-          height: 30px;
-          width: 30px;
-          display: inline;
-        }
-        .container{
-          width: 100%;
-        }
+       }
+       input[type=send-message]{
+         background-color: #FB9300;
+         color: #FFFFFF;
+         text-align: center;
+       }
     </style>
     <title>SUBSCRIBE</title>
   </head>
   <body>
-       <div class="container">
-    <div class="page-header">
-      <button type="button" name="button">YLQ</button>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="photos.html">PHOTOS</a></li>
-        <li><a href="subscribe.html">SUBSCRIBE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="https://accounts.google.com/signin/v2/identifier?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&scc=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">SCHEDULE AN APPOINTMENT</a></li>
-      </ul>
+    <div class="container">
+      <div class="page-header">
+          <button type="button" name="button">YLQ</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="photos.html">PHOTOS</a></li>
+            <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+<li><a href="https://calendar.google.com/calendar/u/0/r">SCHEDULE AN APPOINTMENT</a></li>          </ul>
+        </div>
+        <div class="page-rightsidebar">
+
+        </div>
+        <div class="page-leftsidebar">
+
+        </div>
+        <div class="page-mainbody">
+          <h1>SUBSCRIBE</h1>
+            <ul>
+              <li>
+                <div class="cform"> <form class="cform" action="/action_page.php">
+               <label for="fname">First name:</label><br>
+               <input type="text" id="fname" name="fname" value=""><br><br>
+               <label for="lname">Last name:</label><br>
+               <input type="text" id="lname" name="lname" value=""><br><br>
+               <label for="email">Email Address:</label><br>
+               <input type="email" id="email" name="email" value=""><br><br>
+               <label for="subject">Subject:</label><br>
+               <input type="text" id="subject" name="subject" value=""><br><br>
+               <label for="message">Message:</label><br>
+               <textarea type="text" id="message" name="message" value=""></textarea><br><br>
+               <input type="send-message" value="Submit">
+  </form></div>
+              </li>
+
+            </ul>
+          </div>
+
+        <div class="page-footer">
+           <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul>
+        </div>
+
+
     </div>
 
-      <div class="page-mainbody">
-      <h1>SUBSCRIBE</h1>
-
-      <p> <form action="/action_page.php">
-  <label for="email">Email Address:</label><br>
-  <input type="email" id="email" name="email" value=""><br><br>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <label for="mnumber">Mobile Number:</label><br>
-  <input type="number" id="mnumber" name="mnumber" value=""><br><br>
-  <input type="submit" value="send message">
-</form></p>
-    </div>
-    <aside class="page-rightsidebar">
-
-    </aside>
-    <aside class="page-leftsidebar">
-
-    </aside>
-    <div class="page-footer">
-      <p>  <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul></p>
-    </div>
-     </div>
-    </body>
+  </body>
 </html>

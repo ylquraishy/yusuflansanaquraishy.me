@@ -1,109 +1,153 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <style media="screen">
-      body {
+      .container .page-header {
+        background-color: #001F5F;
+        height: 162px;
+      }
+      .container .page-leftsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
+      }
+      .container .page-rightsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
+        float: right;
+      }
+      .container .page-mainbody {
         background-color: #FFFFFF;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 2000px;
+        margin-top: -2021px;
+        padding-top: 0px;
+      }
+      .container .page-footer {
+        background-color: #001F5F;
+        height: 60px;
+        padding-top: 1px;
+      }
+      .container .page-header ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      .page-header li {
+        display: inline;
+        padding-right: 15px;
+        }
+      .page-header ul {
+        text-align: center;
+      }
+      .page-header ul:hover {
+        text-decoration: underline;
+      }
+       .page-header button {
+        border-radius: 360px;
+        width: 150px;
+        height: 150px;
+        background-color:#FB9300;
+        color: #FFFFFF;
+        text-align: center;
+        position: absolute;
       }
       h1 {
         color: white;
         text-align: center;
       }
-      p {
-        font-family: verdana;
-        font-size: 20px;
+      .container .page-mainbody ul li {
+       list-style: none;
+       float: left;
       }
-      .page-header {
-      min-height: 50px;
-      background-color: #001F5F;
+      .container .page-mainbody .profilephoto {
+        border-radius: 100%;
+        height: 300px;
+        width: 302px;
+        margin-top: 80px;
       }
-      .page-header li a{
-        color: #FFFFFF;
+      .bio {
+      margin-left: 160px;
       }
-    .page-mainbody {
-      background-color: #FB9300;
-      background-size: 50%;
-      min-height: 500px;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-bottom: -500px;
-      padding-top: 0.5px;
+      .profilephoto {
+        margin-left: 40px;
       }
-
-      .page-footer {
-      min-height: 40px;
-      background-color: #001F5F;
-      }
-
-      li {
-        display: inline;
-        padding-right: 15px;
-
-      }
-      ul a {
-       text-decoration: none;
-      }
-      ul a:hover{
-        text-decoration: underline;
-      }
-      .page-rightsidebar{
-      width: 60px;
-      min-height: 500px;
-      float: right;
-      background-color: #001F5F;
-    }
-      .page-leftsidebar{
-      width: 60px;
-      min-height: 500px;
-      background-color: #001F5F;
-      }
-      button {
-        border-radius: 360px;
-        width: 40px;
-        height: 40px;
-        background-color: #FB9300;
-        color: #FFFFFF;
+    .brief-bio ul li {
+       background-color: #357E38;
+       border-radius: 360px;
+        height: 150px;
+        width: 90%;
         text-align: center;
-        position: absolute;
-      }
-      ul {
-        text-align: center;
-      }
-      .icon {
+        margin-top: 50px;
 
-        height: 30px;
-        width: 30px;
-        display: inline;
-      }
+     }
+     .skill ul li {
+       background-color: #FFFFFF;
+       border-radius: 360px;
+        height: 200px;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+     }
+     table {
+       margin: auto;
+       height: 4px;
+       width: auto;
+     }
+     .icon {
+       height: 30px;
+       width: 30px;
+       display: inline;
+     }
+     .container .page-footer ul li {
+      list-style: none;
+      float: left;
+     }
+     .page-footer {
+       height:
+     }
     </style>
-    <title>BLOG</title>
+    <title>BLOG POST</title>
   </head>
   <body>
-    <div class="page-header">
-      <button type="button" name="button">YLQ</button>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="photos.html">PHOTOS</a></li>
-        <li><a href="subscribe.html">SUBSCRIBE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="https://accounts.google.com/signin/v2/identifier?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fselfsched%3Fsstoken%3DUUV2SHVoSFBsZjVFfGRlZmF1bHR8Y2ZkMmQyMGU4MTVjNWQwNzAzYjI0YTQ3NGUyZWNmMjI&scc=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">SCHEDULE AN APPOINTMENT</a></li>
-      </ul>
-    </div>
-    <div class="page-mainbody">
-      <h1>BLOG</h1>
-      <p> This is a placeholder for my MAIN BODY CONTENT</p>
-    </div>
-    <aside class="page-rightsidebar">
+    <div class="container">
+      <div class="page-header">
+          <button type="button" name="button">YLQ</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="photos.html">PHOTOS</a></li>
+            <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+<li><a href="https://calendar.google.com/calendar/u/0/r">SCHEDULE AN APPOINTMENT</a></li>          </ul>
+        </div>
+        <div class="page-rightsidebar">
 
-    </aside>
-    <aside class="page-leftsidebar">
+        </div>
+        <div class="page-leftsidebar">
 
-    </aside>
-    <div class="page-footer">
-      <p>  <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul></p>
+        </div>
+        <div class="page-mainbody">
+          <h1>BLOG POST</h1>
+            <ul>
+              <li>
+                <p> Most of my post are teachnology related such as emerging technology, platform marketing, Sierra Leone and personal achievement.<a href="subscribe.html">Sign up to have new posts emailed to you.</a></p>
+              </li>
+
+            </ul>
+          </div>
+
+        <div class="page-footer">
+           <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul>
+        </div>
+
+
     </div>
-    </body>
+
+  </body>
 </html>
