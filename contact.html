@@ -72,31 +72,70 @@
       list-style: none;
       float: left;
      }
-     .page-footer {
-       height:
-     }
-     label, input,textarea {
-          margin-left: px;
-          width: 80%;
-          align: center
-        }
-        input {
+     h1 {
+         color: black;
+         text-align: center;
+       }
+       textarea {
         width: 700px;
         padding: 15px;
         border-radius: 15px;
         border: 2px solid #FB9300;
+
       }
-      input[type=send message]{
+      input {
+        width: 700px;
+        padding: 15px;
+        border-radius: 15px;
+        border: 2px solid #FB9300;
+       }
+       input[type=send-message]{
          background-color: #FB9300;
          color: #FFFFFF;
          text-align: center;
        }
-       h1 {
-         color: Black;
-         text-align: center;
+       .page-footer li {
+         display: inline;
+         padding-right: 15px;
+         }
+       .page-footer .icon {
+         padding-right: 278.2px;
+         align-content: center;
        }
+       .page-footer .icon {
+         padding-right: 150px;
+         align-content: center;
+       }
+       .previous-next a {
+       text-decoration: none;
+       display: inline-block;
+       padding: 8px 16px;
+
+     }
+
+     .previous-next a:hover {
+       background-color: #ddd;
+       color: black;
+     }
+
+     .previous-next .previous {
+       background-color: #FB9300;
+       color: white;
+
+     }
+
+     .previous-next .next {
+       background-color: #FB9300;
+       color: white;
+     }
+     .previous-Next ul li {
+       display: inline;
+     }
+     .previous-next ul {
+       margin-top: 1900px;
+     }
     </style>
-    <title>CONTACT</title>
+    <title>SUBSCRIBE</title>
   </head>
   <body>
     <div class="container">
@@ -118,24 +157,36 @@
 
         </div>
         <div class="page-mainbody">
-          <h1>CONTACT</h1>
+          <h1>SUBSCRIBE</h1>
             <ul>
               <li>
-                <p> <form action="/action_page.php">
- <label for="email">Email Address:</label><br>
- <input type="email" id="email" name="email" value=""><br><br>
- <label for="fname">First name:</label><br>
- <input type="text" id="fname" name="fname" value=""><br><br>
- <label for="lname">Last name:</label><br>
- <input type="text" id="lname" name="lname" value=""><br><br>
- <label for="mnumber">Mobile Number:</label><br>
- <input type="number" id="mnumber" name="mnumber" value=""><br><br>
- <input type="submit" value="send message">
-</form></p>
-
+                <div class="cform"> <form class="cform" action="/page.php">
+               <label for="fname">First name:</label><br>
+               <input type="text" id="fname" name="fname" value=""><br><br>
+               <label for="lname">Last name:</label><br>
+               <input type="text" id="lname" name="lname" value=""><br><br>
+               <label for="email">Email Address:</label><br>
+               <input type="email" id="email" name="email" value=""><br><br>
+               <label for="subject">Subject:</label><br>
+               <input type="text" id="subject" name="subject" value=""><br><br>
+               <label for="message">Message:</label><br>
+               <textarea type="text" id="message" name="message" value=""></textarea><br><br>
+               <input type="send-message" value="Submit">
+          </form>
+          </div>
               </li>
 
             </ul>
+            <div class="previous-next">
+              <ul>
+                <li>
+                    <a href="#" class="previous">Previous</a>
+                </li>
+                <li>
+                 <a href="#" class="next">Next</a>
+                </li>
+              </ul>
+              </div>
           </div>
 
         <div class="page-footer">
