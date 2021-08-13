@@ -1,173 +1,226 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <style media="screen">
-      body {
-        background-color: #FFFFFF;
+      .container .page-header {
+        background-color: #001F5F;
+        height: 162px;
       }
-      h1 {
-        color: black;
-        text-align: center;
+      .container .page-leftsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
       }
-      p {
-        font-family: verdana;
-        font-size: 20px;
+      .container .page-rightsidebar {
+        background-color: #001F5F;
+        width: 40px;
+        height: 2000px;
+        float: right;
       }
-      .page-header {
-      min-height: 50px;
-      background-color: #001F5F;
+      .container .page-mainbody {
+        background-color: #FB9300;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 2000px;
+        margin-top: -2021px;
+        padding-top: 0px;
       }
-      .page-header li a{
+      .container .page-footer {
+        background-color: #001F5F;
+        height: 60px;
+        padding-top: 1px;
+      }
+      .container .page-header ul li a {
         color: #FFFFFF;
+        text-decoration: none;
       }
-    .page-mainbody {
-      background-color: #FB9300;
-      background-size: 50%;
-      min-height: 800px;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-bottom: -800px;
-      padding-top: 0.5px;
-      }
-
-      .page-footer {
-      min-height: 40px;
-      background-color: #001F5F;
-      }
-      li {
+      .page-header li {
         display: inline;
         padding-right: 15px;
-
+        }
+      .page-header ul {
+        text-align: center;
       }
-      ul a {
-       text-decoration: none;
-      }
-      ul a:hover{
+      .page-header ul:hover {
         text-decoration: underline;
       }
-
-      .page-rightsidebar{
-      width: 60px;
-      min-height: 800px;
-      float: right;
-      background-color: #001F5F;
-    }
-      .page-leftsidebar{
-      width: 60px;
-      min-height: 800px;
-      background-color: #001F5F;
-      }
-      .networkpic{
-        width: 350px;
-        height: 300px;
-      }
-      button {
+       .page-header button {
         border-radius: 360px;
-        width: 40px;
-        height: 40px;
-        background-color: #FB9300;
+        width: 150px;
+        height: 150px;
+        background-color:#FB9300;
         color: #FFFFFF;
         text-align: center;
         position: absolute;
       }
-      ul {
+      h1 {
+        color: white;
         text-align: center;
       }
-      .icon {
-
-        height: 30px;
-        width: 30px;
-        display: inline;
+      .container .page-mainbody ul li {
+       list-style: none;
+       float: left;
       }
-      .container {
-        width: 100%;
+      .container .page-mainbody .profilephoto {
+        border-radius: 100%;
+        height: 300px;
+        width: 302px;
+        margin-top: 80px;
       }
-      .page-footer .icon {
-        padding-right: 150px;
-        align-content: center;
+      .bio {
+      margin-left: 160px;
       }
-      .previous-next a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 8px 16px;
+      .profilephoto {
+        margin-left: 40px;
+      }
+    .brief-bio ul li {
+       background-color: #357E38;
+       border-radius: 360px;
+        height: 150px;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
 
-    }
+     }
+     .skill ul li {
+       background-color: #FFFFFF;
+       border-radius: 360px;
+        height: 200px;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+     }
+     table {
+       margin: auto;
+       height: 4px;
+       width: auto;
+     }
+     .icon {
+       height: 30px;
+       width: 30px;
+       display: inline;
+     }
+     .container .page-footer ul li {
+      list-style: none;
+      float: left;
+     }
+     .page-footer {
+       height:
+     }
+     .page-footer .icon {
+       padding-right: 150px;
+       align-content: center;
+     }
+     .previous-next a {
+     text-decoration: none;
+     display: inline-block;
+     padding: 8px 16px;
 
-    .previous-next a:hover {
-      background-color: #ddd;
-      color: black;
-    }
+   }
 
-    .previous-next .previous {
-      background-color: #FB9300;
-      color: white;
+   .previous-next a:hover {
+     background-color: #ddd;
+     color: black;
+   }
 
-    }
+   .previous-next .previous {
+     background-color: #FB9300;
+     color: white;
 
-    .previous-next .next {
-      background-color: #FB9300;
-      color: white;
-    }
-    .previous-Next ul li {
-      display: inline;
-    }
-    .previous-next ul {
-      margin-top: 1900px;
-    }
+   }
+
+   .previous-next .next {
+     background-color: #FB9300;
+     color: white;
+   }
+   .previous-Next ul li {
+     display: inline;
+   }
+   .previous-next ul {
+     margin-top: 1900px;
+   }
+   .networkpic{
+        width: 370px;
+        height: 400px;
+      }
     </style>
     <title>PHOTO GALLERY</title>
   </head>
   <body>
-      <div class="container">
-    <div class="page-header">
-      <button type="button" name="button">YLQ</button>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="photos.html">PHOTOS</a></li>
-        <li><a href="subscribe.html">SUBSCRIBE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-<li><a href="https://calendar.google.com/calendar/u/0/r">SCHEDULE AN APPOINTMENT</a></li>      </ul>
-    </div>
-    <div class="page-mainbody">
-      <h1>PHOTO GALLERY</h1>
-      <p>  <table cellspacing="20">
-    <tr>
-      <td>  <img class="networkpic" src="pow-pic.jpg" /></td>
-      <td><img class="networkpic" src="agape.jpg" /></td>
-      <td><img class="networkpic" src="leone.jpg" /></td>
-    </tr>
-  </table></p>
-  <p>  <table cellspacing="20">
-<tr>
-  <td>  <img class="networkpic" src="picnet.jpg" /></td>
-  <td><img class="networkpic" src="pp.jpg" /></td>
-  <td><img class="networkpic" src="crimping.jpg" /></td>
-</tr>
-</table></p>
-<div class="previous-next">
-  <ul>
-    <li>
-        <a href="#" class="previous">Previous</a>
-    </li>
-    <li>
-     <a href="#" class="next">Next</a>
-    </li>
-  </ul>
-  </div>
-    </div>
-    <aside class="page-rightsidebar">
+    <div class="container">
+      <div class="page-header">
+          <button type="button" name="button">YLQ</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="photos.html">PHOTOS</a></li>
+            <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+<li><a href="https://calendar.google.com/calendar/u/0/r">SCHEDULE AN APPOINTMENT</a></li>          </ul>
+        </div>
+        <div class="page-rightsidebar">
 
-    </aside>
-    <aside class="page-leftsidebar">
+        </div>
+        <div class="page-leftsidebar">
 
-    </aside>
-    <div class="page-footer">
-      <p>  <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul></p>
+        </div>
+        <div class="page-mainbody">
+          <h1>PHOTO GALLERY</h1>
+            <ul>
+              <li>
+                <p>  <table cellspacing="20">
+              <tr>
+              <td>  <img class="networkpic" src="gra-2017.jpg" /></td>
+              <td><img class="networkpic" src="chekum1.jpg" /></td>
+              <td><img class="networkpic" src="tradin-kenema.png" /></td>
+              </tr>
+              </table></p>
+              <p>  <table cellspacing="20">
+              <tr>
+              <td>  <img class="networkpic" src="picnet.jpg" /></td>
+              <td><img class="networkpic" src="pp.jpg" /></td>
+              <td><img class="networkpic" src="crimping.jpg" /></td>
+              </tr>
+              </table></p>
+              <p>  <table cellspacing="20">
+              <tr>
+              <td>  <img class="networkpic" src="sulisha-lab.jpg" /></td>
+              <td><img class="networkpic" src="com-lab.jpg" /></td>
+              <td><img class="networkpic" src="nassit4.jpg" /></td>
+              </tr>
+              </table></p>
+              <p>  <table cellspacing="20">
+              <tr>
+              <td>  <img class="networkpic" src="dhs-chekum.jpg" /></td>
+              <td><img class="networkpic" src="dhs-kambia.jpg" /></td>
+              <td><img class="networkpic" src="nassit3.jpg" /></td>
+              </tr>
+              </table></p>
+              </li>
+
+            </ul>
+            <div class="previous-next">
+              <ul>
+                <li>
+                    <a href="#" class="previous">Previous</a>
+                </li>
+                <li>
+                 <a href="#" class="next">Next</a>
+                </li>
+              </ul>
+              </div>
+          </div>
+
+        <div class="page-footer">
+           <ul><li><img class="icon" src="telephone.png" /></li><li><img class="icon" src="google.png" /></li><li><img class="icon" src="facebook.png" /></li><li><img class="icon" src="instagram.png" /></li></ul>
+        </div>
+
+
     </div>
-  </div>
-    </body>
+
+  </body>
 </html>
