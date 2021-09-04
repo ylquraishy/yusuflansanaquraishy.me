@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>PHOTOS</title>
+    <style media="screen">
+    * {
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+body {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 400;
+background-color: white;
+}
+
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #1583C5;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(5deg);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+.navbar-nav .nav-item .nav-link {
+  color: #FFFFFF;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <img src="Quraishy.png" alt="Yusuf Lansana Quraishy" width="50" height="44">
+         </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="blog.html">BLOG</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="photos.html">PHOTOS</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="subscribe.html">SUBSCRIBE</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="schedule-an-appointment.html">SCHEDULE AN APPOINTMENT</a>
+         </li>
+        </ul>
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+ </nav>
+
+
+        <div class="gallery-section">
+       <div class="inner-width">
+           <h1>MY PHOTOS</h1>
+           <div class="border"></div>
+           <div class="gallery">
+
+               <a href="img-gallery\gra-photo.jpg" class="image">
+                   <img src="img-gallery\gra-photo.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\pp.jpg" class="image">
+                   <img src="img-gallery\pp.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\nassit3.jpg" class="image">
+                   <img src="img-gallery\nassit3.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\nassit4.jpg" class="image">
+                   <img src="img-gallery\nassit4.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy.jpg"
+                       alt="Yusuf Lansana Quraishy">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-pow-project.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-pow-project.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-pow-project-crimping.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-pow-project-crimping.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\tradin-kenema.png" class="image">
+                   <img src="img-gallery\tradin-kenema.png" alt="">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-chekum.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-chekum.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-royolon.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-royolon.jpg" alt="">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-beach.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-beach.jpg" alt="Yusuf Lansana Quraishy">
+               </a>
+
+               <a href="img-gallery\yusuf-lansana-quraishy-lab.jpg" class="image">
+                   <img src="img-gallery\yusuf-lansana-quraishy-lab.jpg"
+                       alt="Yusuf Lansana Quraishy">
+               </a>
+
+           </div>
+       </div>
+   </div>
+
+
+   <script>
+       $(".gallery").magnificPopup({
+           delegate: 'a',
+           type: 'image',
+           gallery: {
+               enabled: true
+           }
+       });
+   </script>
+        <div class="position-absolute bottom-end">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="blog.html">BLOG</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="photos.html">PHOTOS</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="subscribe.html">SUBSCRIBE</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="schedule-an-appointment.html">SCHEDULE AN APPOINTMENT</a>
+           </li>
+          </ul>
+      </div>
+    </div>
+   </nav>
+   </div>
+    </div>
+
+  </body>
+</html>

@@ -1,112 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Contact - yusufquraishy.me</title>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="subscribe.html">Subscribe</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>CONTACT</title>
+    <style media="screen">
+    .navbar-nav .nav-item .nav-link {
+      color: #FFFFFF;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <img src="Quraishy.png" alt="Yusuf Lansana Quraishy" width="50" height="44">
+         </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="blog.html">BLOG</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="photos.html">PHOTOS</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="subscribe.html">SUBSCRIBE</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" aria-current="page" href="schedule-an-appointment.html">SCHEDULE AN APPOINTMENT</a>
+         </li>
         </ul>
-    </nav>
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+ </nav>
 
-    <section class="contact">
-        <div class="content">
-            <h1>CONTACT</h1>
-            <p>
-                Available between 9am - 6pm (Monday - Friday)
-            </p>
+        <div class="row">
+        <div class="col jumbotron text-center"><h1>CONTACT</h1></div>
         </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><i class="fa fa-address-card" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <h4>Home :</h4>
-                        <p>17 Collier Street,<br>Goderich,<br>Freetown<br>Sierra Leone</p>
-                        <h4>Office :</h4>
-                        <h5>TpISENT (SL) Limited</h5>
-                        <p>13 Hill Cot Road<br>Freetown<br>Sierra Leone</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>+232 78 840084</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>yusuf.l.quraishy@tpisent.sl<br>yusuflansanaquraishy14@gmail.com</p>
-                    </div>
-                </div>
+        <form>
+        <div class="row mb-3">
+            <label for="inputFirstName3" class="col-sm-2 col-form-label">First Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputFirstName3">
             </div>
-            <div class="contactForm">
-                <form>
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea required="required"></textarea>
-                        <span>Type your Message...</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="generalmaj232@gmail.com" value="Send">
-                    </div>
-                </form>
+          </div>
+          <div class="row mb-3">
+            <label for="inputLastName3" class="col-sm-2 col-form-label">Last Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputLasttName3">
             </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="social">
-            <a href="https://www.facebook.com/yusuf.lansanaquraishy/" <i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/QuraishyYusuf" <i class="fab fa-twitter square"></i></a>
-            <a href="https://www.instagram.com/ylquraishy/" <i class="fab fa-instagram"></i></a>
-            <a href="https://mail.google.com/mail/u/0/#search/youtub/FMfcgxwDsFfdlfZXwqNZFLmCXpgrVcJB" <i class="fab fa-youtube"></i></a>
-        </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email Address:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputSubject3" class="col-sm-2 col-form-label">Subject:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputSubject3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputMessage3" class="col-sm-2 col-form-label">Message:</label>
+            <div class="col-sm-10">
+            <textarea class="form-control" id="inputMessage3" rows="3"></textarea>
+            </div>
+          </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+        <div class="position-absolute bottom-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="blog.html">BLOG</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="photos.html">PHOTOS</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="subscribe.html">SUBSCRIBE</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="schedule-an-appointment.html">SCHEDULE AN APPOINTMENT</a>
+           </li>
+          </ul>
+      </div>
+    </div>
+   </nav>
+   </div>
+    </div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="subscribe.html">Subscribe</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <p class="copyright">
-            Mohamed A. Jalloh &copy; 2021
-        </p>
-    </section>
-</body>
-
+  </body>
 </html>
