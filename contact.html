@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>CONTACT</title>
     <style media="screen">
     .navbar-nav .nav-item .nav-link {
       color: #FFFFFF;
     }
-    </style>
+    .container .socialmedia a{
+      color: #FFFFFF;
+      font-size: 24px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      border-radius: 10%;
+      margin-right: 1px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 38px;
+      margin: 0 8px;
+    }
+    .container .socialmedia a:hover{
+      opacity: 0.9;
+      color: #000000;
+    }
+  </style>
   </head>
   <body>
     <div class="container">
@@ -19,8 +37,8 @@
         <a class="navbar-brand" href="#">
          <img src="Quraishy.png" alt="Yusuf Lansana Quraishy" width="50" height="44">
          </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,6 +75,7 @@
         <div class="row">
         <div class="col jumbotron text-center"><h1>CONTACT</h1></div>
         </div>
+
         <form>
         <div class="row mb-3">
             <label for="inputFirstName3" class="col-sm-2 col-form-label">First Name:</label>
@@ -90,13 +109,20 @@
           </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+
         <div class="position-absolute bottom-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="socialmedia">
+            <a href="https://www.facebook.com/yusuf.lansanaquraishy/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/yusuf-lansana-quraishy-6575b3201/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/QuraishyYusuf"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/ylquraishy/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCzDAe2_UwM5tgctapE1NPcw"><i class="bi bi-youtube"></i></a>
+          </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
            <li class="nav-item">
              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
